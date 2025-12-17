@@ -1,0 +1,378 @@
+:root {
+    --deep-blue: #001b3d;
+    --yellow: #ffb300;
+    --orange: #ff7a00;
+    --text-light: #f5f5f5;
+}
+
+.map-container #map {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Навбар */
+.map-container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.map-container .logo {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.map-container .navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+.map-container .navbar nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.map-container .navbar nav a:hover {
+  color: var(--yellow);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* КАРТА */
+.map-container #map {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Кастомные маркеры */
+.map-container .custom-marker {
+  background: transparent !important;
+  border: none !important;
+  position: relative;
+  z-index: 1000;
+}
+
+.map-container .marker-legend,
+.map-container .marker-food,
+.map-container .marker-craft {
+  animation: pulse 2s infinite;
+}
+
+/* Стили попапов */
+.map-container .custom-popup {
+  max-width: 280px;
+  font-family: Arial, sans-serif;
+}
+
+.map-container .custom-popup img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.map-container .popup-content {
+  padding: 12px;
+}
+
+.map-container .popup-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.map-container .popup-content p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.map-container .popup-btn {
+  padding: 8px 16px;
+  background: #ffb300;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.map-container .popup-btn:hover {
+  background: #e6a100;
+}
+
+/* Фильтры */
+.map-container .map-filters {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.map-container .filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+.map-container .filter-btn:hover {
+  border-color: #ffb300;
+  transform: translateY(-2px);
+}
+
+.map-container .filter-btn.active {
+  background: #ffb300;
+  border-color: #ffb300;
+  color: white;
+}
+
+.map-container .filter-icon {
+  font-size: 16px;
+}
+
+/* Обёртка карты */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--deep-blue);
+}
+
+/* Футер */
+.map-container .footer {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: 0;
+}
+
+.map-container .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-container .footer h4 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.map-container .partner-logos img {
+    height: 40px;
+    margin-right: 12px;
+    opacity: 0.8;
+}
+
+.map-container .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.map-container .social-icons img:hover {
+    opacity: 0.6;
+}
+
+.map-container .footer-links a {
+    display: block;
+    color: #ddd;
+    margin-bottom: 6px;
+    text-decoration: none;
+}
+
+.map-container .footer-links a:hover {
+    color: #fff;
+}
+
+.map-container .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.map-container .partner-logos,
+.map-container .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Анимация (без префикса) */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 179, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 179, 0, 0);
+  }
+}
+
+
+/* Модальное окно */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-details {
+  padding: 25px;
+}
+
+.modal-details h2 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.modal-desc {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-style: italic;
+  border-left: 3px solid #ffb300;
+  padding-left: 12px;
+}
+
+.modal-full-desc {
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal-full-desc p {
+  margin-bottom: 15px;
+}
+
+.modal-full-desc p:last-child {
+  margin-bottom: 0;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+    margin: 20px;
+  }
+  
+  .modal-details {
+    padding: 20px;
+  }
+  
+  .modal-image {
+    height: 200px;
+  }
+}

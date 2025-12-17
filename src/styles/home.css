@@ -1,0 +1,124 @@
+:root {
+    --deep-blue: #001b3d;
+    --orange: #ff7a00;
+    --yellow: #ffb300;
+    --text-light: #f5f5f5;
+}
+
+/* NAVBAR --------------------------------------------------- */
+
+.home-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.home-container .logo {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.home-container nav a {
+    padding-right: 50px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.home-container nav a:hover {
+    color: var(--yellow);
+}
+
+.home-container .navbar nav {
+  display: flex;
+  gap: 20px; /* можно настроить под дизайн */
+}
+
+.home-container .navbar nav a {
+  padding: 8px 16px; /* убираем padding-right: 50px */
+}
+
+/* BODY / WRAPPER ------------------------------------------- */
+
+.home-container {
+    padding-top: 60px; /* компенсация для фиксированного navbar */
+    background: #001116;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-light);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* FOOTER ---------------------------------------------------- */
+
+.home-container .footer {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: 0;
+}
+
+.home-container .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-container .footer h4 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.home-container .partner-logos img {
+    height: 40px;
+    margin-right: 12px;
+    opacity: 0.8;
+}
+
+.home-container .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-container .social-icons img:hover {
+    opacity: 0.6;
+}
+
+.home-container .footer-links a {
+    display: block;
+    color: #ddd;
+    margin-bottom: 6px;
+    text-decoration: none;
+}
+
+.home-container .footer-links a:hover {
+    color: #fff;
+}
+
+.home-container .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.home-container .partner-logos,
+.home-container .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

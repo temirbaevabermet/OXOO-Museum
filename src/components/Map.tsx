@@ -38,7 +38,7 @@ export const MapPage: React.FC = () => {
       coords: [42.45, 77.15],
       title: "Иссык-Куль — «Слёзы принцессы»",
       desc: "По легенде, озеро появилось из слёз девушки Айсулуу.",
-      img: "/OXOO-Museum/images/lake.jpg",
+      img: "/images/lake.jpg",
       details: `Озеро Иссык-Куль - одно из крупнейших горных озёр в мире, расположенное на высоте 1607 метров над уровнем моря. 
       
 По древней легенде, в этих местах жила прекрасная принцесса Айсулуу, которая полюбила простого пастуха. Когда её отец узнал об этом, он запретил им встречаться. 
@@ -50,7 +50,7 @@ export const MapPage: React.FC = () => {
       coords: [40.53, 72.8],
       title: "Ош — «Семейный плов»",
       desc: "Первый плов варили караванщикам. Каждый род хранит свой рецепт.",
-      img: "/OXOO-Museum/images/plov.jpeg",
+      img: "/images/plov.jpeg",
       details: `Плов - не просто блюдо, это целая философия для жителей Оша. Традиция приготовления плова передаётся из поколения в поколение.
 
 В древности, когда через Ош проходили караваны Великого Шёлкового пути, местные жители готовили для уставших путешественников особый плов, который восстанавливал силы и согревал душу.
@@ -62,7 +62,7 @@ export const MapPage: React.FC = () => {
       coords: [41.17, 75.8],
       title: "Нарын — «Кузнецы ветра»",
       desc: "Мастера 1960-х ковали украшения из дамасской стали.",
-      img: "/OXOO-Museum/images/person.png",
+      img: "/images/person.png",
       details: `В горных районах Нарына с 1960-х годов существует уникальное ремесло - ковка украшений из дамасской стали. 
 
 Мастера используют особую технику, которую называют "ковкой ветра" - они работают только в определённое время суток, когда ветер с гор достигает нужной силы для поддержания оптимальной температуры в горне.
@@ -286,9 +286,9 @@ export const MapPage: React.FC = () => {
           <div className="partners">
             <h4>Партнёры проекта</h4>
             <div className="partner-logos">
-              <img src="/OXOO-Museum/images/eulogo.png" alt="EU" />
-              <img src="/OXOO-Museum/images/UNDP.png" alt="UNDP" />
-              <img src="/OXOO-Museum/images/aucalogo.png" alt="AUCA" />
+              <img src="/images/eulogo.png" alt="EU" />
+              <img src="/images/UNDP.png" alt="UNDP" />
+              <img src="/images/aucalogo.png" alt="AUCA" />
             </div>
           </div>
 
@@ -297,16 +297,16 @@ export const MapPage: React.FC = () => {
             <h4>Мы в соцсетях</h4>
             <div className="social-icons">
               <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <img src="/OXOO-Museum/images/instagram.svg" alt="Instagram" />
+                <img src="/images/instagram.svg" alt="Instagram" />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <img src="/images/facebook.svg" alt="Facebook" />
               </a>
               <a href="https://t.me" target="_blank" rel="noreferrer">
-                <img src="/OXOO-Museum/images/telegram.svg" alt="Telegram" />
+                <img src="/images/telegram.svg" alt="Telegram" />
               </a>
               <a href="mailto:oxoo.museum@gmail.com">
-                <img src="/OXOO-Museum/images/mail.svg" alt="Email" />
+                <img src="/images/mail.svg" alt="Email" />
               </a>
             </div>
           </div>

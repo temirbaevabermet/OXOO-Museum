@@ -22,10 +22,10 @@ const initialStories: Story[] = [
         region: "Бишкек",
         category: "Труд",
         period: "2000-е",
-        photo: "/OXOO-Museum/images/mirgul.jpg",
+        photo: "/images/mirgul.jpg",
         quote: "Я начала с офис-менеджмента, потом училась вечерами и запустила бизнес…",
         fullText: "Мой путь начинался с должности офис-менеджера в небольшой компании. Каждый вечер после работы я занималась самообразованием, изучала маркетинг и управление бизнесом. Через два года я накопила достаточно знаний и смелости, чтобы открыть собственное дело — кондитерскую. Сегодня у меня три филиала в Бишкеке и команда из 15 человек. Самое важное — никогда не переставать учиться и верить в себя.",
-        photos: ["/OXOO-Museum/images/stories/mirgul-1.jpg", "/OXOO-Museum/images/stories/mirgul-2.jpg", "/OXOO-Museum/images/stories/mirgul-3.jpg"],
+        photos: ["/images/stories/mirgul-1.jpg", "/images/stories/mirgul-2.jpg", "/images/stories/mirgul-3.jpg"],
         tags: ["бизнес", "образование", "женское лидерство"]
     },
     {
@@ -34,10 +34,10 @@ const initialStories: Story[] = [
         region: "Ош",
         category: "Труд",
         period: "2010-е",
-        photo: "/OXOO-Museum/images/aiperi.jpg",
+        photo: "/images/aiperi.jpg",
         quote: "Я рискнула начать агробизнес с нуля и смогла создать успешное предприятие…",
         fullText: "В 2012 году я оставила работу в городе и вернулась в родное село, чтобы заняться сельским хозяйством. Начала с небольшого участка земли и минимальными средствами. Сегодня наша ферма выращивает экологически чистые овощи и фрукты, которые поставляются в несколько регионов страны. Мы создали 25 рабочих мест для местных жителей и продолжаем развиваться.",
-        photos: ["/OXOO-Museum/images/stories/aiperi-1.jpg", "/OXOO-Museum/images/stories/aiperi-2.jpg"],
+        photos: ["/images/stories/aiperi-1.jpg", "/images/stories/aiperi-2.jpg"],
         tags: ["агробизнес", "сельское хозяйство", "развитие регионов"]
     },
     {
@@ -46,10 +46,10 @@ const initialStories: Story[] = [
         region: "Бишкек",
         category: "Труд",
         period: "2010-е",
-        photo: "/OXOO-Museum/images/kairat.jpg",
+        photo: "/images/kairat.jpg",
         quote: "Фронтенд-инженер из Бишкека, который работает удалённо для международных компаний…",
         fullText: "Начал изучать программирование в университете, но настоящие знания получил через онлайн-курсы и практику. Сейчас работаю удалённо для компаний из Европы и США. Это даёт мне возможность жить в Кыргызстане, но получать международный опыт и доход. Организую митапы для местных разработчиков, чтобы делиться знаниями.",
-        photos: ["/OXOO-Museum/images/stories/kairat-1.jpg", "/OXOO-Museum/images/stories/kairat-2.jpg", "/OXOO-Museum/images/stories/kairat-3.jpg"],
+        photos: ["/images/stories/kairat-1.jpg", "/images/stories/kairat-2.jpg", "/images/stories/kairat-3.jpg"],
         tags: ["IT", "удаленная работа", "образование"]
     },
     {
@@ -58,10 +58,10 @@ const initialStories: Story[] = [
         region: "Нарын",
         category: "Семья",
         period: "1990-е",
-        photo: "/OXOO-Museum/images/aliya.jpeg",
+        photo: "/images/aliya.jpeg",
         quote: "Вырастила пятерых детей в трудные 90-е, сохранив семейные традиции…",
         fullText: "В сложные годы после распада СССР мне пришлось одной растить пятерых детей. Работала учителем в школе, вечерами шила одежду на заказ. Несмотря на трудности, все дети получили образование и нашли свой путь. Сегодня у меня 12 внуков, и мы сохраняем наши семейные традиции и обычаи.",
-        photos: ["/OXOO-Museum/images/stories/aliya-1.jpg", "/OXOO-Museum/images/stories/aliya-2.jpg"],
+        photos: ["/images/stories/aliya-1.jpg", "/images/stories/aliya-2.jpg"],
         tags: ["семья", "образование", "традиции"]
     },
     {
@@ -70,10 +70,10 @@ const initialStories: Story[] = [
         region: "Джалал-Абад",
         category: "Власть",
         period: "1980-е",
-        photo: "/OXOO-Museum/images/erkin.jpg",
+        photo: "/images/erkin.jpg",
         quote: "Работал в местной администрации в советское время, видел переход к независимости…",
         fullText: "Проработал в системе местного самоуправления более 30 лет. Был свидетелем кардинальных изменений в стране — от советской системы к независимости. Участвовал в создании первых местных органов власти независимого Кыргызстана. Считаю, что главное в работе с людьми — это честность и уважение.",
-        photos: ["/OXOO-Museum/images/erkin.jpg", "/OXOO-Museum/images/stories/erkin-2.jpg", "/OXOO-Museum/images/stories/erkin-3.jpg"],
+        photos: ["/images/erkin.jpg", "/images/stories/erkin-2.jpg", "/images/stories/erkin-3.jpg"],
         tags: ["госуправление", "история", "общество"]
     },
     {
@@ -82,10 +82,10 @@ const initialStories: Story[] = [
         region: "Иссык-Куль",
         category: "Труд",
         period: "2000-е",
-        photo: "/OXOO-Museum/images/gulnara.jpg",
+        photo: "/images/gulnara.jpg",
         quote: "Развивала туризм на Иссык-Куле, создала сеть гостевых домов…",
         fullText: "Начала с маленького гостевого дома на 5 номеров. Постепенно развивала бизнес, изучала международные стандарты гостеприимства. Сегодня наша сеть включает 12 гостевых домов вокруг озера Иссык-Куль. Мы активно работаем с местными сообществами, продвигаем экотуризм и сохраняем природное наследие региона.",
-        photos: ["/OXOO-Museum/images/stories/gulnara-1.jpg", "/OXOO-Museum/images/stories/gulnara-2.jpg"],
+        photos: ["/images/stories/gulnara-1.jpg", "/images/stories/gulnara-2.jpg"],
         tags: ["туризм", "бизнес", "экология"]
     }
 ];
@@ -183,7 +183,7 @@ export const Stories: React.FC = () => {
             region: newStory.region,
             category: newStory.category,
             period: newStory.period,
-            photo: "/OXOO-Museum/images/stories/default.jpg", // Заглушка
+            photo: "/images/stories/default.jpg", // Заглушка
             quote: newStory.text.substring(0, 140) + (newStory.text.length > 140 ? "…" : ""),
             fullText: newStory.text,
             photos: [], // В реальном приложении нужно загружать фото

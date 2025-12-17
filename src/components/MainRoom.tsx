@@ -182,9 +182,9 @@ export function MainRoom() {
           <div className="partners">
             <h4>Партнёры проекта</h4>
             <div className="partner-logos">
-              <img src="/images/eulogo.png" alt="EU" />
-              <img src="/images/UNDP.png" alt="UNDP" />
-              <img src="/images/aucalogo.png" alt="AUCA" />
+              <img src="/OXOO-Museum/images/eulogo.png" alt="EU" />
+              <img src="/OXOO-Museum/images/UNDP.png" alt="UNDP" />
+              <img src="/OXOO-Museum/images/aucalogo.png" alt="AUCA" />
             </div>
           </div>
 
@@ -192,16 +192,16 @@ export function MainRoom() {
             <h4>Мы в соцсетях</h4>
             <div className="social-icons">
               <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <img src="/images/instagram.svg" alt="Instagram" />
+                <img src="/OXOO-Museum/images/instagram.svg" alt="Instagram" />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <img src="/images/facebook.svg" alt="Facebook" />
+                <img src="/OXOO-Museum/images/facebook.svg" alt="Facebook" />
               </a>
               <a href="https://t.me" target="_blank" rel="noreferrer">
-                <img src="/images/telegram.svg" alt="Telegram" />
+                <img src="/OXOO-Museum/images/telegram.svg" alt="Telegram" />
               </a>
               <a href="mailto:oxoo.museum@gmail.com">
-                <img src="/images/mail.svg" alt="Email" />
+                <img src="/OXOO-Museum/images/mail.svg" alt="Email" />
               </a>
             </div>
           </div>

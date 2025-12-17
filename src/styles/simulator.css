@@ -76,7 +76,7 @@
     color: var(--text-light);
     overflow-x: hidden;
 
-    background: url('../images/html-parralax-combined.gif') no-repeat center center fixed;
+    background: url('/OXOO-Museum/images/html-parralax-combined.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
